@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>常见问题 · dsh-mini(DeepSeek Harness Mini)</title>
+<meta name="description" content="dsh-mini 常见问题:安装、升级、卸载、端口、数据位置等,一问一答。">
+<link rel="icon" href="assets/img/maid_icon_32.png">
+<meta name="theme-color" content="#081120">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="assets/img/maid_icon_96.png">
+<script>(function(){try{var s=localStorage.getItem('wm-theme');if(s!=='light'&&s!=='dark'){s=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.dataset.theme=s;var m=document.querySelector('meta[name="theme-color"]');if(m){m.setAttribute('content',s==='light'?'#eef4fa':'#081120');}}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-ico"><img src="assets/img/maid_icon_96.png" alt="鲸鱼娘头像"></span>
+      <span class="brand-name">dsh-mini</span>
+      <span class="brand-tag">DeepSeek Harness Mini</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a href="changelog.html">更新日志</a>
+      <a href="tutorial.html">使用教程</a>
+        <a href="https://wyr233.com">肥鱼港湾 · 主站</a>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-dl" href="https://github.com/WYR-233/dsh-mini/releases/tag/v0.1.0" target="_blank" rel="noopener"><img class="btn-ico" src="assets/img/icon_github.svg" alt="GitHub"> 下载</a>
+    <button class="theme-btn js-theme" type="button" aria-label="切换亮色/暗色" title="切换亮色/暗色">🌙</button>
+    <button class="nav-burger" id="navBurger" aria-label="菜单">☰</button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html">首页</a>
+    <a href="faq.html" class="active">FAQ</a>
+    <a href="changelog.html">更新日志</a>
+    <a href="tutorial.html">使用教程</a>
+    <a class="btn btn-primary btn-sm" href="https://github.com/WYR-233/dsh-mini/releases/tag/v0.1.0" target="_blank" rel="noopener"><img class="btn-ico" src="assets/img/icon_github.svg" alt="GitHub"> 下载 v0.1.0</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <h1>常见问题</h1>
+    <p>你有问题,她有答案。点开看看,不行再去 GitHub 提 issue~</p>
+    <img class="page-hero-art" src="assets/img/maid_cry.webp" alt="鲸鱼娘哭哭">
+  </section>
+
+  <div class="page-body">
+    <div class="faq-list">
+      <details open>
+        <summary>dsh-mini 是什么?</summary>
+        <div class="faq-a">dsh-mini 是 <b>DeepSeek Harness</b> 的DeepSeek Harness Mini:把完整的 AI 助手打包成单个 exe 安装包,双击安装完就能用。开源、免费、MIT 协议。</div>
+      </details>
+      <details>
+        <summary>安装需要管理员权限吗?</summary>
+        <div class="faq-a">不需要。它默认装在你自己的用户目录下(<code>%localappdata%\DeepSeekHarnessMini</code>),公司电脑、学校电脑也能装。</div>
+      </details>
+      <details>
+        <summary>需要先装 Node.js 或配置环境吗?</summary>
+        <div class="faq-a">不用。安装包自带 Node 24 运行时,环境全封装好了,装完即用,不污染系统。</div>
+      </details>
+      <details>
+        <summary>怎么升级到新版本?</summary>
+        <div class="faq-a">直接下载新版本安装包,<b>覆盖安装</b>即可。你的会话、设置、记忆数据全部原样保留,不会丢。</div>
+      </details>
+      <details>
+        <summary>怎么卸载?</summary>
+        <div class="faq-a">从「开始菜单 → 设置 → 应用」里找到 dsh-mini 卸载,或运行安装目录里的卸载程序。卸载向导全程中文,她会哭哭挽留你(数据会清掉,想留先备份)。卸载后可能残留 1~4 个几十 KB 的小文件,无害,重装即覆盖。</div>
+      </details>
+      <details>
+        <summary>我的数据存在哪里?</summary>
+        <div class="faq-a">在安装目录的 <code>home</code> 文件夹里(会话、设置、记忆都在)。升级不受影响,卸载会一起清掉。</div>
+      </details>
+      <details>
+        <summary>端口被占了怎么办?</summary>
+        <div class="faq-a">托盘程序支持端口参数:运行 <code>DshMini.exe 2255</code> 用 2255 端口启动;<code>DshMini.exe --stop</code> 停止服务。默认端口冲突时换个端口即可。</div>
+      </details>
+      <details>
+        <summary>收费吗?能商用吗?</summary>
+        <div class="faq-a">完全免费,<b>MIT 协议</b>开源,商用、改版、二次开发都欢迎。源码在 GitHub。</div>
+      </details>
+      <details>
+        <summary>GitHub 下载慢怎么办?</summary>
+        <div class="faq-a">用 Gitee 国内镜像下载(<a href="https://gitee.com/wyr233/dsh-mini/releases" target="_blank" rel="noopener">gitee.com/wyr233/dsh-mini/releases</a>),速度更快。两个渠道内容一致。</div>
+      </details>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-row">
+      <span class="footer-brand"><img src="assets/img/maid_icon_32.png" alt="鲸鱼娘" class="footer-brand-img"> dsh-mini</span>
+      <span class="footer-links">
+        <a href="https://github.com/WYR-233/dsh-mini" target="_blank" rel="noopener">GitHub 仓库</a>
+        <a href="https://gitee.com/wyr233/dsh-mini" target="_blank" rel="noopener">Gitee 镜像</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="tutorial.html">使用教程</a>
+      </span>
+    </div>
+    <div class="footer-row">
+      <p class="footer-legal">
+        © 2026 WYR-233 · dsh-mini 基于 DeepSeek Harness,按 <a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT 协议</a> 开源。
+        主要依赖:Node.js(MIT)、Inno Setup(开源许可)。
+      </p>
+      <p class="footer-icp">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2026130315号-1</a>
+        <span>· 公安备案号申请中</span>
+      </p>
+      <p class="footer-ai">本站部分图片由 AI 生成（人工智能生成合成内容，已作声明）</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+</html>

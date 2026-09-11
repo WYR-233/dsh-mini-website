@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>使用教程 · dsh-mini(DeepSeek Harness Mini)</title>
+<meta name="description" content="dsh-mini 使用教程:下载、安装、启动、聊天、升级、卸载,鲸鱼娘手把手教。">
+<link rel="icon" href="assets/img/maid_icon_32.png">
+<meta name="theme-color" content="#081120">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="assets/img/maid_icon_96.png">
+<script>(function(){try{var s=localStorage.getItem('wm-theme');if(s!=='light'&&s!=='dark'){s=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.dataset.theme=s;var m=document.querySelector('meta[name="theme-color"]');if(m){m.setAttribute('content',s==='light'?'#eef4fa':'#081120');}}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-ico"><img src="assets/img/maid_icon_96.png" alt="鲸鱼娘头像"></span>
+      <span class="brand-name">dsh-mini</span>
+      <span class="brand-tag">DeepSeek Harness Mini</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="faq.html">FAQ</a>
+      <a href="changelog.html">更新日志</a>
+      <a href="tutorial.html" class="active">使用教程</a>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-dl" href="https://github.com/WYR-233/dsh-mini/releases/tag/v0.1.0" target="_blank" rel="noopener"><img class="btn-ico" src="assets/img/icon_github.svg" alt="GitHub"> 下载</a>
+    <button class="theme-btn js-theme" type="button" aria-label="切换亮色/暗色" title="切换亮色/暗色">🌙</button>
+    <button class="nav-burger" id="navBurger" aria-label="菜单">☰</button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html">首页</a>
+    <a href="faq.html">FAQ</a>
+    <a href="changelog.html">更新日志</a>
+    <a href="tutorial.html" class="active">使用教程</a>
+    <a class="btn btn-primary btn-sm" href="https://github.com/WYR-233/dsh-mini/releases/tag/v0.1.0" target="_blank" rel="noopener"><img class="btn-ico" src="assets/img/icon_github.svg" alt="GitHub"> 下载 v0.1.0</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <h1>使用教程</h1>
+    <p>鲸鱼娘拿着笔和本本,手把手教你。</p>
+    <img class="page-hero-art" src="assets/img/maid_teach.webp" alt="鲸鱼娘拿笔本教学">
+  </section>
+
+  <div class="page-body">
+    <div class="tutorial-steps">
+      <div class="tutorial-step">
+        <h3><span class="step-no">1</span>下载安装包</h3>
+        <p>去 <a href="https://github.com/WYR-233/dsh-mini/releases/tag/v0.1.0" target="_blank" rel="noopener">GitHub Release</a> 下载 <code>DeepSeekHarnessMini-Setup-v0.1.0.exe</code>(45.2MB);网络慢就走 <a href="https://gitee.com/wyr233/dsh-mini/releases" target="_blank" rel="noopener">Gitee 镜像</a>。</p>
+      </div>
+      <div class="tutorial-step">
+        <h3><span class="step-no">2</span>双击安装</h3>
+        <p>双击安装包,跟着中文向导一路「下一步」。不需要管理员权限,默认装进自己的用户目录。</p>
+      </div>
+      <div class="tutorial-step">
+        <h3><span class="step-no">3</span>从托盘启动</h3>
+        <p>装好后,右下角托盘会出现鲸鱼娘头像图标。单击她,打开网页界面;右击她,有更多菜单。她平时就在托盘里吃白米饭。</p>
+      </div>
+      <div class="tutorial-step">
+        <h3><span class="step-no">4</span>开始聊天</h3>
+        <p>在输入框里打字,回车发送,她就会回答你。写代码、问问题、整理文档,都可以。</p>
+      </div>
+      <div class="tutorial-step">
+        <h3><span class="step-no">5</span>端口参数(进阶)</h3>
+        <p>默认端口被占用?托盘程序支持参数:<code>DshMini.exe 2255</code> 指定端口启动,<code>DshMini.exe --stop</code> 停止服务。</p>
+      </div>
+      <div class="tutorial-step">
+        <h3><span class="step-no">6</span>升级</h3>
+        <p>出了新版本,下载新安装包<b>覆盖安装</b>即可,数据全部保留,不用卸载重装。</p>
+      </div>
+      <div class="tutorial-step">
+        <h3><span class="step-no">7</span>卸载</h3>
+        <p>在 Windows「应用」列表里找到 dsh-mini 卸载,或运行安装目录里的卸载程序。她会哭哭确认,点「忍心卸载」就拜拜啦。</p>
+      </div>
+    </div>
+    <div class="tutorial-tip">
+      <b>鲸鱼娘小提示:</b>遇到问题先翻 <a href="faq.html">FAQ</a>;还有疑问去 GitHub 提 issue,附上报错截图,她修得飞快。
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-row">
+      <span class="footer-brand"><img src="assets/img/maid_icon_32.png" alt="鲸鱼娘" class="footer-brand-img"> dsh-mini</span>
+      <span class="footer-links">
+        <a href="https://github.com/WYR-233/dsh-mini" target="_blank" rel="noopener">GitHub 仓库</a>
+        <a href="https://gitee.com/wyr233/dsh-mini" target="_blank" rel="noopener">Gitee 镜像</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="tutorial.html">使用教程</a>
+        <a href="https://wyr233.com">肥鱼港湾 · 主站</a>
+      </span>
+    </div>
+    <div class="footer-row">
+      <p class="footer-legal">
+        © 2026 WYR-233 · dsh-mini 基于 DeepSeek Harness,按 <a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT 协议</a> 开源。
+        主要依赖:Node.js(MIT)、Inno Setup(开源许可)。
+      </p>
+      <p class="footer-icp">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2026130315号-1</a>
+        <span>· 公安备案号申请中</span>
+      </p>
+      <p class="footer-ai">本站部分图片由 AI 生成（人工智能生成合成内容，已作声明）</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>dsh-mini · DeepSeek Harness Mini</title>
+<meta name="description" content="dsh-mini 是 DeepSeek Harness 的极简桌面版:一个 exe、中文向导、无需管理员、自带 Node,双击即用的 AI 助手。开源免费,MIT 协议。">
+<link rel="icon" href="assets/img/maid_icon_32.png">
+<meta name="theme-color" content="#081120">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="assets/img/maid_icon_96.png">
+<script>(function(){try{var s=localStorage.getItem('wm-theme');if(s!=='light'&&s!=='dark'){s=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.dataset.theme=s;var m=document.querySelector('meta[name="theme-color"]');if(m){m.setAttribute('content',s==='light'?'#eef4fa':'#081120');}}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-ico"><img src="assets/img/maid_icon_96.png" alt="鲸鱼娘头像"></span>
+      <span class="brand-name">dsh-mini</span>
+      <span class="brand-tag">DeepSeek Harness Mini</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">首页</a>
+      <a href="faq.html">FAQ</a>
+      <a href="changelog.html">更新日志</a>
+      <a href="tutorial.html">使用教程</a>
+        <a href="https://wyr233.com">肥鱼港湾 · 主站</a>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-dl" href="https://github.com/WYR-233/dsh-mini/releases/tag/v0.1.0" target="_blank" rel="noopener"><img class="btn-ico" src="assets/img/icon_github.svg" alt="GitHub"> 下载</a>
+    <button class="theme-btn js-theme" type="button" aria-label="切换亮色/暗色" title="切换亮色/暗色">🌙</button>
+    <button class="nav-burger" id="navBurger" aria-label="菜单">☰</button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html" class="active">首页</a>
+    <a href="faq.html">FAQ</a>
+    <a href="changelog.html">更新日志</a>
+    <a href="tutorial.html">使用教程</a>
+    <a class="btn btn-primary btn-sm" href="https://github.com/WYR-233/dsh-mini/releases/tag/v0.1.0" target="_blank" rel="noopener"><img class="btn-ico" src="assets/img/icon_github.svg" alt="GitHub"> 下载 v0.1.0</a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">🎉 v0.1.0 已发布 · 开源免费 · MIT 协议</div>
+        <h1 class="hero-title">
+          dsh-mini<br>
+          <span class="hero-title-sub">一个 exe,双击就能用的 AI 助手</span>
+        </h1>
+        <p class="hero-desc">
+          这是 <strong>DeepSeek Harness</strong> 的极简桌面版:单个安装包、全中文向导、
+          不需要管理员权限,自带运行环境,装完就能和鲸鱼娘聊天。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="https://github.com/WYR-233/dsh-mini/releases/tag/v0.1.0" target="_blank" rel="noopener">
+            <img class="btn-ico" src="assets/img/icon_github.svg" alt="GitHub"> GitHub 下载 v0.1.0(45.2MB)
+          </a>
+          <a class="btn btn-ghost btn-lg" href="https://gitee.com/wyr233/dsh-mini/releases" target="_blank" rel="noopener">
+            <img class="btn-ico" src="assets/img/icon_gitee.svg" alt="Gitee"> Gitee 国内镜像
+          </a>
+        </div>
+        <p class="hero-meta">Windows 单 exe · 无需管理员 · 自带 Node · 升级不丢数据</p>
+      </div>
+      <div class="hero-art">
+        <img src="assets/img/maid_lying.webp" alt="鲸鱼娘趴着向你打招呼" loading="eager">
+      </div>
+    </div>
+    <div class="hero-wave"></div>
+  </section>
+
+  <!-- 特性 -->
+  <section class="features">
+    <h2 class="section-title">为什么是 dsh-mini<span class="section-title-dot">。</span></h2>
+    <p class="section-sub">给不想折腾环境的小白,也给你家电脑。</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-ico">📦</div>
+        <h3>单文件安装包</h3>
+        <p>一个 exe 走天下,双击 → 下一步 → 完成,没有别的下载,没有隐藏步骤。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-ico">🇨🇳</div>
+        <h3>全中文向导</h3>
+        <p>安装、升级、卸载全程中文,每一步都看得懂,小白无压力。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-ico">🔓</div>
+        <h3>无需管理员权限</h3>
+        <p>装在自己的用户目录里,公司电脑、学校电脑也能悄悄用(小声)。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-ico">🛠️</div>
+        <h3>自带 Node 运行时</h3>
+        <p>不用装环境、不用配变量,打开即用,关掉即走,不留垃圾。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-ico">💾</div>
+        <h3>升级不丢数据</h3>
+        <p>覆盖安装新版本,你的会话、设置、记忆全部原地保留。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-ico"><img src="assets/img/maid_icon_64.png" alt="鲸鱼娘头像"></div>
+        <h3>鲸鱼娘全程陪伴</h3>
+        <p>安装时挥手欢迎、托盘里吃白米饭、卸载时哭哭挽留,萌力全开。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 功能入口(鲸鱼娘带队) -->
+  <section class="gallery">
+    <h2 class="section-title">鲸鱼娘带你逛<span class="section-title-dot">。</span></h2>
+    <p class="section-sub">四个入口,每扇门后都有一只鲸鱼娘在等你。</p>
+    <div class="gallery-grid">
+      <a class="gallery-item" href="tutorial.html">
+        <img src="assets/img/maid_rice.webp" alt="鲸鱼娘吃白米饭" loading="lazy">
+        <figcaption><b>使用教程</b>——托盘里的她,干饭等你来聊</figcaption>
+        <span class="gallery-go">去看教程 →</span>
+      </a>
+      <a class="gallery-item" href="https://github.com/WYR-233/dsh-mini" target="_blank" rel="noopener">
+        <img src="assets/img/maid_heart.webp" alt="鲸鱼娘比心" loading="lazy">
+        <figcaption><b>开源仓库</b>——喜欢就点个 Star,她给你比心</figcaption>
+        <span class="gallery-go">去 GitHub →</span>
+      </a>
+      <a class="gallery-item" href="changelog.html">
+        <img src="assets/img/maid_proud.webp" alt="鲸鱼娘叉腰得意" loading="lazy">
+        <figcaption><b>更新日志</b>——每次升级,她都叉腰得意</figcaption>
+        <span class="gallery-go">看更新 →</span>
+      </a>
+      <a class="gallery-item" href="faq.html">
+        <img src="assets/img/maid_cry.webp" alt="鲸鱼娘哭哭" loading="lazy">
+        <figcaption><b>常见问题</b>——卸载时她会哭哭(FAQ 里说好了)</figcaption>
+        <span class="gallery-go">看 FAQ →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-inner">
+      <h2>准备好了吗?<br>三分钟,把鲸鱼娘领回家。</h2>
+      <div class="cta-actions">
+        <a class="btn btn-primary btn-lg" href="https://github.com/WYR-233/dsh-mini/releases/tag/v0.1.0" target="_blank" rel="noopener"><img class="btn-ico" src="assets/img/icon_github.svg" alt="GitHub"> GitHub 下载 v0.1.0</a>
+        <a class="btn btn-ghost btn-lg" href="https://gitee.com/wyr233/dsh-mini/releases" target="_blank" rel="noopener"><img class="btn-ico" src="assets/img/icon_gitee.svg" alt="Gitee"> Gitee 国内镜像</a>
+      </div>
+      <p class="cta-meta">装好后点托盘里的鲸鱼娘头像,就可以开始聊天了</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-row">
+      <span class="footer-brand"><img src="assets/img/maid_icon_32.png" alt="鲸鱼娘" class="footer-brand-img"> dsh-mini</span>
+      <span class="footer-links">
+        <a href="https://github.com/WYR-233/dsh-mini" target="_blank" rel="noopener">GitHub 仓库</a>
+        <a href="https://gitee.com/wyr233/dsh-mini" target="_blank" rel="noopener">Gitee 镜像</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="tutorial.html">使用教程</a>
+      </span>
+    </div>
+    <div class="footer-row">
+      <p class="footer-legal">
+        © 2026 WYR-233 · dsh-mini 基于 DeepSeek Harness,按 <a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT 协议</a> 开源。
+        主要依赖:Node.js(MIT)、Inno Setup(开源许可)。
+      </p>
+      <p class="footer-icp">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2026130315号-1</a>
+        <span>· 公安备案号申请中</span>
+      </p>
+      <p class="footer-ai">本站部分图片由 AI 生成（人工智能生成合成内容，已作声明）</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
